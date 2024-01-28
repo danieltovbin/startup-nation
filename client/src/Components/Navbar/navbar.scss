@@ -1,0 +1,31 @@
+.navbar {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 100px;
+    padding-left: 30px;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    a {
+      padding: 10px 20px;
+      color: white;
+      cursor: pointer;
+      transition: all .3s;
+      &:hover{
+        border-bottom: 3px solid rgb(255, 107, 203);
+        color: black;
+        text-shadow: 1px 2px 1px white;
+      }
+
+    }
+    .active{
+      background-color: rgba(0, 0, 0, 0.241);
+    }
+  }
+}
