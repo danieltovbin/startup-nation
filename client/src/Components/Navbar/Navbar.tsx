@@ -6,14 +6,13 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <div className="logo">
-            <img src="../../../public/image/IDEA-removebg-preview.png" alt="" />
+            <img src="../../../public/image/IDEA ICON .png" alt="" />
         </div>
         <div className="navList">
           <ul>
-            {/* <li onClick={()=>navigate("/login")}>Login</li>
-            <li onClick={()=>navigate("/register")}>Register</li> */}
             <NavLink to={"/login"}> Login</NavLink>
             <NavLink to={"/register"}> Register</NavLink>
+            <NavLink to={"/homePage"}> Home</NavLink>
           </ul>
         </div>
     </div>
