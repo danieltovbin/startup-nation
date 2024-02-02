@@ -1,0 +1,19 @@
+.nav{
+    display: flex;
+    flex-direction: row-reverse;
+    button{
+        align-items: center;
+        justify-content: center;
+        svg{
+            
+            align-items: center;
+        }
+    }
+}
+
+
+.MuiSvgIcon-root {
+    display: inline-block; /* גורם לאייקונים להופיע כבלוקים כדי שנוכל להשתמש ב-text-align */
+    vertical-align: middle; /* יישור אנכי כדי להקטין את הקווים בהתאם לגובה של הטקסט בסביבתם */
+    padding: 0px 10px;
+  }
