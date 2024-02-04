@@ -1,14 +1,16 @@
-import React from "react";
-import { FaListCheck } from "react-icons/fa6";
-import { AiFillAppstore } from "react-icons/ai";
-import { IoEyeOutline } from "react-icons/io5";
+import { useState } from "react";
+
 import "./creationNav.scss";
+import ProcessNav from "./ProcessNav";
 const CreationNav = () => {
+  const [processPresent, setProcessPresent] = useState(true);
+
   return (
     <div>
-      <div className="MuiContainer-root jss98 nav MuiContainer-maxWidthXl">
-        <div className="MuiContainer-root jss99 jss110 MuiContainer-disableGutters">
+      <div className="MuiContainer-root nav jss98  MuiContainer-maxWidthXl">
+        <div className="MuiContainer-root rNav jss99 jss110 MuiContainer-disableGutters">
           <button
+            onClick={() => setProcessPresent((prev) => !prev)}
             className="MuiButtonBase-root MuiButton-root MuiButton-text jss116 jss120 jss117 jss121 withPadding withHeaderMargin"
             tabIndex={0}
             type="button"
@@ -111,7 +113,7 @@ const CreationNav = () => {
             <span className="MuiTouchRipple-root"></span>
           </button>
         </div>
-        <div className="MuiContainer-root jss100 MuiContainer-disableGutters">
+        <div className="MuiContainer-root lNav jss100 MuiContainer-disableGutters">
           <button
             className="MuiButtonBase-root MuiButton-root jss101 MuiButton-text jss157 jss162 jss158 jss163 false Mui-disabled Mui-disabled"
             tabIndex={-1}
@@ -119,9 +121,9 @@ const CreationNav = () => {
             disabled
             id="cd46c507-02f3-d129-6c40-2b0005fc2202"
             style={{
-               backgroundColor:  "rgb(255, 13, 144)",
-               color:"rgb(255, 225, 225)",
-              }}
+              backgroundColor: "rgb(255, 13, 144)",
+              color: "rgb(255, 225, 225)",
+            }}
           >
             <span className="MuiButton-label jss102">
               <svg
@@ -140,9 +142,15 @@ const CreationNav = () => {
               שלחו לי משוב
             </span>
           </button>
-         
         </div>
       </div>
+      {processPresent ? (
+        <div className="processPresent">
+          <ProcessNav/>
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
