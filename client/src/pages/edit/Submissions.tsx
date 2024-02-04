@@ -1,4 +1,3 @@
-import React from 'react'
 import EditLayout from '../../layouts/EditLayout'
 import './scss/submissions.scss'
 import { Button, Container, SvgIcon } from '@mui/material'
