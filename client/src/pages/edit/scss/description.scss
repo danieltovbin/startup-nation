@@ -5,11 +5,15 @@
     padding: 0 calc((100% - 818px) / 2) !important;
 
     .description-container{
-        width: 100%;
+    width: 100%;
     display: block;
     box-sizing: border-box;
     margin-right: auto;
     margin-left: auto;
+
+    label{
+        margin: 40px 0px 0px;
+    }
     }
 
     
