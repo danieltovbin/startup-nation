@@ -1,13 +1,16 @@
-import { RouterProvider } from "react-router-dom";
-import './App.css'
-import { router } from "./routes/routes";
+import "./App.css";
+import ToastComp from "./Components/Helpers/ToastComp";
+import RegisterPage from "./Pages/RegisterPage/RegisterPage";
+import Router from "./Router/Router";
+
 
 function App() {
-  return  <RouterProvider router={router} />
+  return (
+    <>
+    <Router/>
+    
+    </>
+  );
 }
 
-export default App
-
-
-
-
+export default App;
